@@ -21,7 +21,7 @@ InputText.propTypes = {
       placeholder: PropTypes.string,
       childern : PropTypes.array,
       onChange : PropTypes.func
-}
+};
 
 
 export default InputText;
