@@ -5,7 +5,7 @@ export default function helloReducer(state = { username: "World !!!!!" }, action
 
     case SAY_HELLO:
 
-       return Object.assign({}, state, {
+      return Object.assign({}, state, {
         username: action.name
       });
     default:

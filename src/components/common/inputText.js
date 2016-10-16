@@ -1,14 +1,14 @@
 import React, { Component, PropTypes } from 'react';
 
 
-const InputText = ({name, value, placeholder, childern,onChange}) => {
+const InputText = ({name, value, placeholder, childern, onChange}) => {
 
     return (
         <input type="text"
-        name={name} 
-        value={childern} 
-        placeholder={placeholder} 
-        onChange={onChange}>
+            name={name}
+            value={childern}
+            placeholder={placeholder}
+            onChange={onChange}>
 
             {childern}
         </input>
@@ -16,11 +16,11 @@ const InputText = ({name, value, placeholder, childern,onChange}) => {
 };
 
 InputText.propTypes = {
-    name : PropTypes.string.isRequired,
-     value:PropTypes.string,
-      placeholder: PropTypes.string,
-      childern : PropTypes.array,
-      onChange : PropTypes.func
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string,
+    placeholder: PropTypes.string,
+    childern: PropTypes.array,
+    onChange: PropTypes.func
 };
 
 

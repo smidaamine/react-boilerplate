@@ -9,9 +9,9 @@ module.exports = {
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
     'react-hot-loader/patch',
     './src/index',
-    
+
   ],
-   plugins: [
+  plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
   output: {
@@ -19,24 +19,26 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/static/'
   },
- 
+
   module: {
     loaders: [
-      
+
       {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel',
         include: path.join(__dirname, 'src')
       },
-     
-      
-     { test: /\.css$/, include: path.join(__dirname, 'src'),
-     loaders: ['style-loader', 
-     'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[local]___[hash:base64:5]',
+
+
+      {
+        test: /\.css$/, include: path.join(__dirname, 'src'),
+        loaders: ['style-loader',
+          'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[local]___[hash:base64:5]',
           'postcss-loader'
-     ]},
-      
+        ]
+      },
+
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file' },
       { test: /\.(woff|woff2)$/, loader: 'url?prefix=font/&limit=5000' },
       { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream' },
@@ -46,7 +48,7 @@ module.exports = {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loader: 'file'
       },
-       {
+      {
         test: /\.css$/,
         exclude: path.join(__dirname, 'src'),
         loader: 'style!css'
