@@ -12,7 +12,8 @@ React app boilerplate
 - [x] [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
 - [x] [Eslint](https://github.com/eslint/eslint)
 - [x] [Eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
-- [x] [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import)
+- [x] [Eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import)
+- [x] [React-hot-loader](http://gaearon.github.io/react-hot-loader/)
 
 
 ### Setup
