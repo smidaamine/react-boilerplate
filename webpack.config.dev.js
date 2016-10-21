@@ -34,8 +34,7 @@ module.exports = {
       {
         test: /\.css$/, include: path.join(__dirname, 'src'),
         loaders: ['style-loader',
-          'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[local]___[hash:base64:5]',
-          'postcss-loader'
+          'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[local]___[hash:base64:5]'
         ]
       },
 
